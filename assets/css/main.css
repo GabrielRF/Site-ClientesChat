@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("background.jpeg");
+		background-color: #F5F5F6;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -152,7 +152,6 @@ input, select, textarea {
 		}
 
 	body {
-		background-image: url("background.jpeg");
 		color: #000000;
 	}
 
