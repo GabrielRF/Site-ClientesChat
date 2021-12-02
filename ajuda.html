@@ -29,13 +29,14 @@
                 <div class="content">
                     <h2 id="ajuda">Ajuda</h2>
                     <ol>
-			<li><a href="#bot">Bot</a></li>
+			<li><a href="#bot" class="smooth-scroll-middle">Bot</a></li>
                         <ul>
 			    <li><a href="#bot_criar" class="smooth-scroll-middle">Criação</a></li>
 			    <li><a href="#bot_foto" class="smooth-scroll-middle">Foto</a></li>
 			    <li><a href="#bot_inline" class="smooth-scroll-middle">Modo inline</a></li>
 			    <li><a href="#bot_desc" class="smooth-scroll-middle">Descrição</a></li>
 			    <li><a href="#bot_about" class="smooth-scroll-middle">Sobre este bot</a></li>
+			    <li><a href="#bot_join" class="smooth-scroll-middle">Impedir grupos</a></li>
                         </ul>
 			<li><a href="#grupo" class="smooth-scroll-middle">Grupo</a></li>
 			<ul>
@@ -92,10 +93,34 @@
                         <li>Escolha o bot que deseja habilitar o modo inline;</li>
                         <li>Envie uma palavra ou frase que será exibida quando o bot for usado em modo inline.</li>
                     </ol>
+		    <h3 id="bot_desc">Descrição</h3>
+		    <p>Texto exibido quando o bot é aberto pela primeira vez.</p>
+                    <ol>
+                        <li>Fale com o <a href="https:t.me/BotFather">@BotFather</a>;</li>
+                        <li>Envie o comando <code>/setdescription</code>;</li>
+                        <li>Escolha o bot que deseja escrever uma descrição;</li>
+                        <li>Envie o texto.</li>
+                    </ol>
+		    <h3 id="bot_about">Sobre este bot</h3>
+		    <p>Texto exibido no perfil do bot.</p>
+                    <ol>
+                        <li>Fale com o <a href="https:t.me/BotFather">@BotFather</a>;</li>
+                        <li>Envie o comando <code>/setabouttext</code>;</li>
+                        <li>Escolha o bot que deseja escrever um texto para o perfil;</li>
+                        <li>Envie o texto.</li>
+                    </ol>
+		    <h3 id="bot_join">Impedir grupos</h3>
+		    <p>Esta opção <b>é recomendada</b>. Deve ser feita somente após o bot ser inserido no grupo e no canal de atendimento. Ela impede que o bot seja inserido em outros grupos.</p>
+                    <ol>
+                        <li>Fale com o <a href="https:t.me/BotFather">@BotFather</a>;</li>
+                        <li>Envie o comando <code>/setjoingroups</code>;</li>
+                        <li>Escolha o bot que deseja impedir que seja colocado em grupos;</li>
+			<li>Escolha a opção <code>Disable</code>.</li>
+                    </ol>
                 </div>
             </section>
 	    <section class="onscroll-image-fade-in">
-                <div class="gallery style1 lightbox small onscroll-fade-in onscroll-image-fade-in">
+                <div class="gallery style2 lightbox small onscroll-fade-in onscroll-image-fade-in">
                     <article>
                         <a href="images/bot_criar.png" class="image">
                             <img src="images/bot_criar.png" alt="Criar bot">
@@ -110,9 +135,39 @@
                     </article>
                     <article>
                         <a href="images/bot_inline.png" class="image">
-                            <img src="images/bot_inline.png" alt="Filtro de conversas ativas">
+                            <img src="images/bot_inline.png" alt="Modo inline">
                         </a>
                         <div class="caption"><h3>Modo inline</h3></div>
+                    </article>
+		    <article>
+                        <a href="images/bot_desc.png" class="image">
+                            <img src="images/bot_desc.png" alt="Definição de descrição">
+                        </a>
+                        <div class="caption"><h3>Definição de descrição</h3></div>
+                    </article>
+		    <article>
+                        <a href="images/bot_desc_result.png" class="image">
+                            <img src="images/bot_desc_result.png" alt="Exibição de descrição">
+                        </a>
+                        <div class="caption"><h3>Exibição de descrição</h3></div>
+                    </article>
+		    <article>
+                        <a href="images/bot_about_result.png" class="image">
+                            <img src="images/bot_about.png" alt="Definição de texto de perfil">
+                        </a>
+                        <div class="caption"><h3>Definição de texto de perfil</h3></div>
+                    </article>
+		    <article>
+                        <a href="images/bot_about_result.png" class="image">
+                            <img src="images/bot_about_result.png" alt="Exibição de texto de perfil">
+                        </a>
+                        <div class="caption"><h3>Exibição de texto de perfil</h3></div>
+                    </article>
+		    <article>
+                        <a href="images/bot_join.png" class="image">
+                            <img src="images/bot_join.png" alt="Bot não pode ser inserido em grupos">
+                        </a>
+                        <div class="caption"><h3>Bot não pode ser inserido em grupos</h3></div>
                     </article>
                 </div>
             </section>
@@ -146,7 +201,7 @@
                 </div>
             </section>
 	    <section class="onscroll-image-fade-in">
-                <div class="gallery style1 lightbox small onscroll-fade-in onscroll-image-fade-in">
+                <div class="gallery style2 lightbox small onscroll-fade-in onscroll-image-fade-in">
                     <article>
                         <a href="images/grupo_criar.png" class="image">
                             <img src="images/grupo_criar.png" alt="Criar grupo">
@@ -208,7 +263,7 @@
                 </div>
             </section>
 	    <section class="onscroll-image-fade-in">
-                <div class="gallery style1 lightbox small onscroll-fade-in onscroll-image-fade-in">
+                <div class="gallery style2 lightbox small onscroll-fade-in onscroll-image-fade-in">
                     <article>
                         <a href="images/canal_criar.png" class="image">
                             <img src="images/canal_criar.png" alt="Criar canal">
