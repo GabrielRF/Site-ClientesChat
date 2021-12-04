@@ -52,13 +52,13 @@
 			    <li><a href="#canal_bot" class="smooth-scroll-middle">Adicionar bot</a></li>
 			    <li><a href="#canal_pessoas" class="smooth-scroll-middle">Adicionar pessoas</a></li>
 			</ul>
-			<li><a href="respostas" class="smooth-scroll-middle">Respostas prontas</a></li>
+			<li><a href="#respostas" class="smooth-scroll-middle">Respostas prontas</a></li>
 			<ul>
 			    <li><a href="#resposta_criar" class="smooth-scroll-middle">Criação</a></li>
 			    <li><a href="#resposta_uso" class="smooth-scroll-middle">Uso</a></li>
 			    <li><a href="#resposta_del" class="smooth-scroll-middle">Remoção</a></li>
 			</ul>
-			<li><a href="atendimento" class="smooth-scroll-middle">Atendimento</a></li>
+			<li><a href="#atendimento" class="smooth-scroll-middle">Atendimento</a></li>
 			<ul>
 			    <li><a href="#atendimento_chat" class="smooth-scroll-middle">Chat</a></li>
 			    <li><a href="#atendimento_prioridade" class="smooth-scroll-middle">Prioridade</a></li>
@@ -86,7 +86,7 @@
                         <li>Envie a foto.</li>
                     </ol>
 		    <h3 id="bot_inline">Modo inline</h3>
-		    <p><i>Modo disponível apenas para a equipe de atendimento</i></p>
+		    <p><i>Modo disponível apenas para a equipe de atendimento</i>.</p>
                     <ol>
                         <li>Fale com o <a href="https:t.me/BotFather">@BotFather</a>;</li>
                         <li>Envie o comando <code>/setinline</code>;</li>
@@ -289,6 +289,92 @@
                         <div class="caption"><h3>Adicionar pessoas</h3></div>
                     </article>
                 </div>
+            </section>
+	    <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="respostas">
+                <div class="content">
+                    <h2>Respostas prontas</h2>
+		    <p><i>Função disponível apenas para a equipe de atendimento</i>.</p>
+                    <h3 id="resposta_criar">Criação</h3>
+                    <ol>
+                        <li>Em uma conversa em que o bot é usado, envie o comando <code>resposta</code>;</li>
+                        <li>Envie a mensagem de texto que deseja salvar como uma resposta pronta.</li>
+                    </ol>
+                    <h3 id="resposta_uso">Uso</h3>
+                    <ol>
+                        <li>Em qualquer chat, digite o <code>@usuario</code> do bot;</li>
+                        <li>Aguarde as opções e clique na reposta que deseja enviar.</li>
+			<p><i>Opcionalmente é possível filtrar respostas por palavra chave, bastando digitar a palavra após o <code>@usuario</code> do bot</i>.</p>
+                    </ol>
+                    <h3 id="resposta_del">Remoção</h3>
+                    <ol>
+                        <li>Em uma conversa em que o bot é usado, envie o comando <code>/remover</code>;</li>
+                        <li>Envie a resposta que deseja remover.</li>
+			<p><i>Dica: É possível selecionar a resposta usando o modo inline, facilitando assim a digitação</i>.</p>
+                    </ol>
+                </div>
+            </section>
+	    <section class="onscroll-image-fade-in">
+                <div class="gallery style2 lightbox small onscroll-fade-in onscroll-image-fade-in">
+                    <article>
+                        <a href="images/resposta_criar.png" class="image">
+                            <img src="images/resposta_criar.png" alt="Criação">
+                        </a>
+                        <div class="caption"><h3>Criação</h3></div>
+		    </article>
+                    <article>
+                        <a href="images/resposta_uso.png" class="image">
+                            <img src="images/resposta_uso.png" alt="Uso (filtrando pela palavra modem)">
+                        </a>
+                        <div class="caption"><h3>Uso (filtrando pela palavra "modem")</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/resposta_del.png" class="image">
+                            <img src="images/resposta_del.png" alt="Remoção">
+                        </a>
+                        <div class="caption"><h3>Remoção</h3></div>
+                    </article>
+                </div>
+            </section>
+	    <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="atendimento">
+                <div class="content">
+                    <h2>Atendimento</h2>
+                    <p><i>Apenas para a equipe de atendimento</i>.</p>
+                    <h3 id="atendimento_chat">Chat</h3>
+		    <p><b>Todos os atendimentos acontecem no canal</b>, sendo uma conversa por usuário. A conversa de cada usuário é criada no momento em que o usuário envia sua primeira mensagem ao bot. As conversas ativas (não finalizadas) são listadas nas mensagens fixadas do canal.</p>
+		    <p><b>A conversa com o usuário não deve ser removida do canal</b>. Caso ocorra a remoção, em uma próxima mensagem do usuário será criada uma nova conversa, perdendo-se o histórico somente do lado da equipe de atendimento.</p>
+		    <p><b>A remoção de mensagens é unilateral</b>. Ou seja, caso alguém da equipe apague uma mensagem do chat, isto não terá efeito na conversa vista pela pessoa atendida. Se a pessoa atendida remover uma mensagem, esta remoção também não é refletida na conversa com a equipe de atendimento.</p>
+		    <p><b>As mensagens podem ser editadas</b> e a edição é efetiva tanto na conversa com o usuário quanto na conversa vista pela equipe de atendimento.</p>
+		    <p>Durante uma conversa podem ser enviadas <b>mensagens de texto, voz, vídeos, arquivos, fotos e documentos</b>.</p>
+                    <h3 id="atendimento_prioridade">Prioridade</h3>
+		    <p><b>Cada conversa pode receber uma classificação de prioridade</b>. Para ver as opções de prioridade, envie o comando <code>/p</code>.</p>
+		    <p>A prioridade é definida quando é enviado <code>/p</code> e o valor da prioridade <b>em uma mensagem só</b>.
+		    <p><i>Exemplo</i>: O envio de <code>/p 3</code> definiria a prioridade como <b>Urgente</b>.
+		    <p>O comando <code>/ban</code> define a pessoa com a menor prioridade possível. A troca de mensagens ainda será possível, mas <b>nenhuma notificação será enviada para a equipe de atendimento</b>. Para desbanir basta definir uma nova prioridade ou finalizar o atendimento usando-se o comando <code>/fim</code>.</p>
+                    <h3 id="atendimento_notificacao">Notificação</h3>
+		    <p>A qualquer momento é possível solicitar que a opção de notificar quando uma conversa for iniciada. <b>As notificações são enviadas em mensagens particulares a todas as pessoas que sejam administradoras do canal</b>, independente de suas permissões. Ou seja, com a opção ligada, sempre que houver uma nova conversa o bot irá enviar uma mensagem em privado para cada administrador avisando que há uma conversa nova. A mensagem de notificação contém um link para fácil visualização do atendimento.</p>
+                </div>
+            </section>
+	    <section class="onscroll-image-fade-in">
+                <div class="gallery style2 lightbox small onscroll-fade-in onscroll-image-fade-in">
+		    <article>
+                        <a href="images/channel.png" class="image">
+                            <img src="images/channel.png" alt="Chat">
+                        </a>
+                        <div class="caption"><h3>Chat</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/priority.png" class="image">
+                            <img src="images/priority.png" alt="Prioridade">
+                        </a>
+                        <div class="caption"><h3>Prioridade</h3></div>
+                    </article>
+                    <article>
+                        <a href="images/filter.png" class="image">
+                            <img src="images/filter.png" alt="Filtro de conversas ativas">
+                        </a>
+                        <div class="caption"><h3>Filtro de conversas ativas</h3></div>
+                    </article>
+		</div>
             </section>
             <footer class="wrapper style1 align-center">
                 <div class="inner">
