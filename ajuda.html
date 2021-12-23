@@ -65,6 +65,7 @@
 			    <li><a href="#atendimento_prioridade" class="smooth-scroll-middle">Prioridade</a></li>
 			    <li><a href="#atendimento_notificacao" class="smooth-scroll-middle">Notificação</a></li>
 			    <li><a href="#atendimento_notas" class="smooth-scroll-middle">Comentários e anotações</a></li>
+			    <li><a href="#atendimento_origem" class="smooth-scroll-middle">Origem do atendimento</a></li>
 			</ul>
                     </ol>
                 </div>
@@ -356,6 +357,10 @@
 		    <p>A qualquer momento é possível solicitar que a opção de notificar quando uma conversa for iniciada. <b>As notificações são enviadas em mensagens particulares a todas as pessoas que sejam administradoras do canal</b>, independente de suas permissões. Ou seja, com a opção ligada, sempre que houver uma nova conversa o bot irá enviar uma mensagem em privado para cada administrador avisando que há uma conversa nova. A mensagem de notificação contém um link para fácil visualização do atendimento.</p>
                     <h3 id="atendimento_notas">Comentários e anotações</h3>
 		    <p>Mensagens enviadas pela equipe de atendimento contendo <code>#</code> como primeiro caractere <b>não são enviadas aos usuários</b>. Tal funcionalidade é útil para comunicação interna da equipe e para fazer anotações durante um atendimento.</p>
+                    <h3 id="atendimento_origem">Origem do atendimento</h3>
+		    <p><b>Saiba o contexto da pessoa</b> através do parâmetro enviado por <i>deeplink</i> ao bot.</p>
+		    <p><i>Exemplo</i>:<code>https://t.me/ClientesChat?start=RastreioBot</code> enviaria o parâmetro <code>RastreioBot</code> quando a conversa fosse iniciada, deixando claro que aquele atendimento seria a respeito do bot.</p>
+                </div>
                 </div>
             </section>
 	    <section class="onscroll-image-fade-in">
@@ -377,6 +382,12 @@
                             <img src="images/filter.png" alt="Filtro de conversas ativas">
                         </a>
                         <div class="caption"><h3>Filtro de conversas ativas</h3></div>
+                    </article>
+		    <article>
+                        <a href="images/source.png" class="image">
+                            <img src="images/source.png" alt="Origem do atendimento sendo RastreioBot">
+                        </a>
+                        <div class="caption"><h3>Origem do atendimento</h3></div>
                     </article>
 		</div>
             </section>
