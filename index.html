@@ -6,8 +6,8 @@
 -->
 <html>
     <head>
-        <title>Clientes.Chat</title>
-        <meta property="og:title" content="Clientes.Chat">
+        <title>ClientesChatBot</title>
+        <meta property="og:title" content="ClientesChatBot">
         <meta property="og:locale" content="pt_BR">
         <meta name="description" content="https://telegram.me/ClientesChatBot">
         <meta property="og:description" content="A melhor maneira de atender seus clientes no Telegram! https://telegram.me/ClientesChatBot">
@@ -27,7 +27,7 @@
         <div id="wrapper" class="divided">
             <section class="banner onload-image-fade-in onload-content-fade-right style3 fullscreen orient-right content-align-left image-position-center">
                 <div class="content">
-                    <h1>Clientes.Chat</h1>
+                    <h1>ClientesChatBot</h1>
                         <div class="content">
                             <p><strong>A melhor maneira de atender seus clientes no Telegram!</strong></p>
                         </div>
@@ -37,7 +37,7 @@
 			</ul>
 			<ul class="actions special">
                             <li><a href="#contato" class="button wide smooth-scroll-middle">Contato</a></li>
-                            <li><a href="https://clienteschat.grf.xyz/ajuda" class="button wide smooth-scroll-middle">Ajuda</a></li>
+                            <li><a href="ajuda.html" class="button wide smooth-scroll-middle">Ajuda</a></li>
                         </ul>
                 </div>
                 <div class="image">
@@ -58,40 +58,25 @@
 	    <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
                 <div class="content">
                     <h2 id="equipe">Visão de Atendente</h2>
-		    <p><b>Toda a conversa acontece em um canal vinculado a um grupo</b>. Cada cliente representa uma <i>thread</i> diferente. Os atendimentos podem receber diferentes prioridades, podem ser encerrados e também banidos.</p>
+		    <p><b>Toda a conversa acontece em um grupo de tópicos</b>. Cada cliente representa um tópico diferente. Os atendimentos podem receber diferentes ícones, podem ser encerrados e os usuários podem ser banidos.</p>
 		    <h3>Bot</h3>
-		    <p>🤖 <b>O bot deve estar presente como administrador do canal e do grupo</b>. O bot e as pessoas no canal devem estar com a opção <code>Permanecer Anônimo</code> <b>desligada</b>.</p>
-		    <p><b>O bot é seu!</b> Personalize-o como quiser! Escolha também as mensagens de início, de recomeço e de fim de atendimento. Os comandos (menu) são geridos por <i>software</i> e diferem conforme o contexto (equipe ou cliente).</p>
+		    <p>🤖 <b>O bot deve estar presente como administrador do grupo</b>.</p>
+		    <p><b>O bot é seu!</b> Personalize-o como quiser! Escolha também as mensagens de início, de ajuda e de fim de atendimento. Os comandos (menu) são geridos por <i>software</i> e diferem conforme o contexto (equipe ou cliente).</p>
 		    <p>Respostas que se repetem muito podem ser salvas como <b>Respostas Prontas</b>. Use o comando <code>/resposta</code> para salvar uma nova mensagem. As respostas são acessíveis somente por membros da equipe de atendimento e podem ser usadas em qualquer lugar em modo <i>inline</i>. Para buscar uma resposta, basta digitar termos como argumentos do modo <i>inline</i>.</p>
 		    <p><b>Utilize o mesmo bot para diferentes cenários e contextos</b>. Saiba onde a pessoa iniciou o contato por um simples envio de parâmetro de link, indicando na primeira mensagem a origem do atendimento.</p>
 		    <h3>Grupo</h3>
-		    <p>👥 O grupo serve como um <b>registro de atividades</b>. Somente o bot e quem o criou devem ser membros. A única função do grupo é permitir os comentários em canais (<i>threads</i>).</p>
-		    <h3>Canal</h3>
-		    <p>📰 É no canal em que toda a comunicação é feita. <b>Cada cliente será representado em uma <i>thread</i></b>, que conterá todo o seu histórico de atendimentos. As <i>threads</i> não devem ser apagadas. O comando <code>/fim</code> termina um atendimento, faz a <i>thread</i> mudar de cor e a remove das mensagens fixadas.</p>
-		    <p><b>Múltiplos atendentes podem enviar mensagens em uma mesma <i>thread</i></b>. Somente os membros do canal são capazes de ver quem enviou cada mensagem. Para o cliente, as mensagens todas são enviadas em nome do bot.</p>
-		    <p><b>Todos os administradores do canal são notificados pelo bot quando uma <i>thread</i> é criada ou retomada</b>. Administradores não precisam de nenhuma permissão, sendo o cargo necessário somente para que o bot consiga ver a lista de administradores. Por motivos de privacidade do Telegram, bots somente são capazes de enviar mensagens para quem já os acionou. Logo, para serem notificados, os administradores devem enviar ao menos um <code>/start</code> para o bot.</p>
-		    <p>As <i>threads</i> recebem diferentes cores conforme sua prioridade. Os administradores definem as prioridades e isto é transparente para os clientes, servindo somente para organização dos atendimentos. A prioridade é definida usando-se o comando <code>/p</code> em uma conversa de atendimento.</p>
+		    <p>👥 O grupo serve como um <b>registro de atividades</b>, tendo como principal tópico de registros o <code>#General</code>.</p>
+		    <p>📰 <b>Cada cliente será representado em um tópico</b>, que conterá todo o seu histórico de atendimentos. Os tópicos não devem ser apagadas. O atendimento é encerrado quando o tópico é fechado.</p>
+		    <p><b>Múltiplos atendentes podem enviar mensagens em um mesmo tópico</b>. Notas internas podem ser inseridas em um tópico, basta que a mensagem seja iniciada com <code>#</code>.</p> 
                 </div>
             </section>
 	    <section class="onscroll-image-fade-in">
                 <div class="gallery style2 lightbox small onscroll-fade-in onscroll-image-fade-in">
                     <article>
                         <a href="images/channel.png" class="image">
-                            <img src="images/channel.png" alt="Lista de atendimentos">
+                            <img src="images/group.png" alt="Lista de atendimentos">
                         </a>
                         <div class="caption"><h3>Lista de atendimentos</h3></div>
-                    </article>
-                    <article>
-                        <a href="images/priority.png" class="image">
-                            <img src="images/priority.png" alt="Definição de prioridade">
-                        </a>
-                        <div class="caption"><h3>Definição de prioridade</h3></div>
-                    </article>
-                    <article>
-                        <a href="images/filter.png" class="image">
-                            <img src="images/filter.png" alt="Filtro de conversas ativas">
-                        </a>
-                        <div class="caption"><h3>Filtro de conversas ativas</h3></div>
                     </article>
                     <article>
                         <a href="images/quick_answers.png" class="image">
@@ -105,17 +90,28 @@
                         </a>
                         <div class="caption"><h3>Indicação da origem do atendimento</h3></div>
                     </article>
+		    <article>
+                        <a href="images/transcription.png" class="image">
+                            <img src="images/transcription.png" alt="Transcrição de mensagens de voz (plano pago)">
+                        </a>
+                        <div class="caption"><h3>Transcrição de mensagens de voz (plano pago)</h3></div>
+                    </article>
+		    <article>
+                        <a href="images/source.png" class="image">
+                            <img src="images/payment.png" alt="Envio de cobranças (plano pago)">
+                        </a>
+                        <div class="caption"><h3>Envio de cobranças (plano pago)</h3></div>
+                    </article>
                 </div>
             </section>
 	    <section class="spotlight style1 orient-left content-align-center image-position-center onscroll-image-fade-in" id="contato">
                 <div class="content">
                     <h2>Entre em contato</h2>
-		    <p>Gostou? Fale conosco e <b>faça um teste grátis por 30 dias</b>!*</p>
+		    <p>Gostou? Fale conosco e <b>faça um teste usando o plano grátis</b>!*</p>
 			<ul class="actions special">
-                            <li><a href="https://t.me/ClientesChatBot" class="button wide smooth-scroll-middle">🤖 ClientesChatBot</a></li>
+                            <li><a href="https://t.me/ClientesChatBot?start=Hotsite" class="button wide smooth-scroll-middle">🤖 ClientesChatBot</a></li>
 			</ul>
-		    <p>*Sujeito a aprovação e disponibilidade de recursos computacionais</p>
-		    <p>Disponível também para hospedagem em infra própria. <a href="https://github.com/GabrielRF/ClientesChat">Informações no repositório</a>.</p>
+		    <p>*Sujeito a disponibilidade de recursos computacionais.</p>
                 </div>
             </section>
             <footer class="wrapper style1 align-center">
